@@ -80,6 +80,7 @@ var overflowTwo;
 
 var panasonicPJLink = 'panasonicPJLink';
 var sanyoPLC = 'sanyoPLC';
+var sharpTV = 'sharpTV';
 var auto_adjust = 'auto-adjust';
 var blank_off = 'blank-off';
 var blank_on = 'blank-on';
@@ -508,7 +509,7 @@ function extronBox (address, port, deviceType, action)
 		command = '%02' + command + '%03';
 	} // end if(); for device
 	
-	if (deviceType == 'sanyoPLC')
+	if (deviceType == 'sharpTV')
 	{
 		
 		var urlStart = urlStart + 'RS|';
@@ -528,7 +529,7 @@ function extronBox (address, port, deviceType, action)
 				break;
 		}
 		
-		// Add in Sanyo's funny little end byte:
+		// Add in Sharp's funny little end byte:
 		command = command + '%0D';
 	} // end if(); for device
 	

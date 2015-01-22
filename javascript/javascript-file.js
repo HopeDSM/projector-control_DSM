@@ -425,16 +425,16 @@ function extronBox (address, port, deviceType, action)
 				command = 'OSH:1';
 				break;
 			case 'focus-in-coarse':
-				command = 'VXX:LNSI4=+00200';
+				command = 'VXX%3ALNSI4=%2B00200';
 				break;
 			case 'focus-in-fine':
-				command = 'VXX:LNSI4=+00000';
+				command = 'VXX%3ALNSI4=%2B00000';
 				break;
 			case 'focus-out-coarse':
-				command = 'VXX:LNSI4=+00201';
+				command = 'VXX%3ALNSI4=%2B00201';
 				break;
 			case 'focus-out-fine':
-				command = 'VXX:LNSI4=+00001';
+				command = 'VXX%3ALNSI4=%2B00001';
 				break;
 			case 'freeze-off':
 				command = 'OFZ:0';

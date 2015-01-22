@@ -512,16 +512,16 @@ function extronBox (address, port, deviceType, action)
 				command = 'PON';
 				break;
 			case 'zoom-in-coarse':
-				command = 'VXX:LNSI5=+00200';
+				command = 'VXX%3ALNSI5=%2B00200';
 				break;
 			case 'zoom-in-fine':
-				command = 'VXX:LNSI5=+00000';
+				command = 'VXX%3ALNSI5=%2B00000';
 				break;
 			case 'zoom-out-coarse':
-				command = 'VXX:LNSI5=+00201';
+				command = 'VXX%3ALNSI5=%2B00201';
 				break;
 			case 'zoom-out-fine':
-				command = 'VXX:LNSI5=+00001';
+				command = 'VXX%3ALNSI5=%2B00001';
 				break;
 		} // end switch();
 		// Add in Panasonic's funny little

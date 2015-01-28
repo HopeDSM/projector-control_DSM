@@ -1,10 +1,10 @@
 function httpGet (theUrl)
 	{
 		var xmlHttp = null;
-    		xmlHttp = new XMLHttpRequest();
-    		xmlHttp.open( "GET", theUrl, true );
-    		xmlHttp.send();
-	}
+    	xmlHttp = new XMLHttpRequest();
+    	xmlHttp.open( "GET", theUrl, true );
+    	xmlHttp.send();
+    }
 
 function goBack()
 	{
@@ -60,27 +60,10 @@ Done!
 
 
 
-
-// initilize location/address variables with meaningless content,
-// so that they equal themselves. (This is needed for a
-// switch/case block later on.)
-
-var worshipCenter = 'worshipCenter';
-
-
-// get all our variables ready:
-
-var mainScreen;
-var foldbackScreen;
-var overflowOne;
-var overflowTwo;
-
-
 // setup other same-as-name variables
 
 var panasonicPJLink = 'panasonicPJLink';
 var sanyoPLC = 'sanyoPLC';
-var sharpTV = 'sharpTV';
 var auto_adjust = 'auto-adjust';
 var blank_off = 'blank-off';
 var blank_on = 'blank-on';
@@ -218,6 +201,7 @@ The following devices are supported by deviceType:
 	daLite
 	panasonicPJLink
 	sanyoPLC
+	sharpTV
 
 
 
@@ -241,25 +225,9 @@ var port;
 
 function extronBox (address, port, deviceType, action)
 {
-	/*
-		This switch block is the code that sets up
-		our variables for the different projectors.
-		
-		It knows, per room, what ports correspond to
-		what projector - so you don't have to remember.
-	*/
-	switch (address)
-	{
-		case 'worshipCenter':
-			foldbackScreen = '02';
-			mainScreen = '01';
-			overflowOne = '03';
-			overflowTwo = '04';
-			worshipCenter = 'http://192.168.50.4/file.html';
-			break;
-	}
-				
-		
+
+	populateVars (address);
+
 	//var urlStart = address + '?cmd=W' + port + 'RS|';
 	var urlStart = address + '?cmd=W' + port;
 	var command;

@@ -4,8 +4,9 @@
 	<head>
 		<meta charset="utf-8"> 
 		<title>Worship Center controls</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet/styles-file.css">
-		<script type="text/javascript" src="javascript/javascript-file.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<script type="text/javascript" src="javascript/common_extron-stuff.js"></script>
+		<script type="text/javascript" src="javascript/dsm_projector-vars.js"></script>
 		<!--
 			Reminder:
 			extronBox(address, port, deviceType, action);
@@ -21,7 +22,7 @@
 			<br>
 			<img src="graphics/productionlogo_s.png" alt="Production Logo">
 		</div>
-		<table class="table-buttons full-width table-align-center">
+		<table class="table-buttons width-90 table-align-center">
 			<tr class="table-buttons">
 				<td colspan="2">
 					<span class="arial-big light-gray">Power controls:</span>
@@ -29,34 +30,34 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, power_on);">Projector ON</a>
+					<a class="common simple green width-80" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, power_on);">Projector ON</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, power_off);">Projector OFF</a>
-				</td>
-			</tr>
-			<tr class="table-buttons">
-				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(worshipCenter, foldbackScreen, sharpTV, power_on);">Foldback ON</a>
-				</td>
-				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(worshipCenter, foldbackScreen, sharpTV, power_off);">Foldback OFF</a>
+					<a class="common simple red width-80" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, power_off);">Projector OFF</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(worshipCenter, overflowOne, sharpTV, power_on);">GS-1 ON</a>
+					<a class="common simple green width-80" onclick="extronBox(worshipCenter, foldbackScreen, sharpTV, power_on);">Foldback ON</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(worshipCenter, overflowOne, sharpTV, power_off);">GS-1 OFF</a>
+					<a class="common simple red width-80" onclick="extronBox(worshipCenter, foldbackScreen, sharpTV, power_off);">Foldback OFF</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(worshipCenter, overflowTwo, sharpTV, power_on);">GS-2 ON</a>
+					<a class="common simple green width-80" onclick="extronBox(worshipCenter, overflowOne, sharpTV, power_on);">GS-1 ON</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(worshipCenter, overflowTwo, sharpTV, power_off);">GS-2 OFF</a>
+					<a class="common simple red width-80" onclick="extronBox(worshipCenter, overflowOne, sharpTV, power_off);">GS-1 OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(worshipCenter, overflowTwo, sharpTV, power_on);">GS-2 ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(worshipCenter, overflowTwo, sharpTV, power_off);">GS-2 OFF</a>
 				</td>
 			</tr>
 			<tr>
@@ -74,18 +75,18 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, freeze_off);">Projector Freeze OFF</a>
+					<a class="common simple green width-80" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, freeze_off);">Projector Freeze OFF</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, freeze_on);">Projector Freeze ON</a>
+					<a class="common simple red width-80" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, freeze_on);">Projector Freeze ON</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, blank_off);">Projector Blank OFF</a>
+					<a class="common simple green width-80" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, blank_off);">Projector Blank OFF</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, blank_on);">Projector Blank ON</a>
+					<a class="common simple red width-80" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, blank_on);">Projector Blank ON</a>
 				</td>
 			</tr>
 			<tr>
@@ -96,7 +97,7 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons" colspan="2">
-					<a class="common simple yellow full-width" href="worship-center_advanced.html">Advanced Controls</a>
+					<a class="common simple yellow width-90" href="worship-center_advanced.html">Advanced Controls</a>
 				</td>
 			</tr>
 		</table>
